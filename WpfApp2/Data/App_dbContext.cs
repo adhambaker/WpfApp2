@@ -12,7 +12,6 @@ namespace WpfApp2.Data
         public DbSet<Teacher> Teacher { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-
             optionsBuilder.UseSqlServer("database=final4;Data Source=LEVASCH-TCH-174\\NEWADHAM;Integrated Security=True;Encrypt=False;Trust Server Certificate=True");
         }
 
@@ -24,6 +23,8 @@ namespace WpfApp2.Data
                  .WithOne(a => a.Student)
                  .HasForeignKey(a => a.StudentId)
                  .OnDelete(DeleteBehavior.Cascade);
+
+
 
 
             base.OnModelCreating(modelBuilder);

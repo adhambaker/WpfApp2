@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using StudentTaskSystem.Model;
+using System.Collections.Generic;
 
 namespace WpfApp2.Model
 {
@@ -12,5 +13,6 @@ namespace WpfApp2.Model
 
 
         public List<Assignment> Assignments { get; set; } = new();
+        public List<Teacher> Teachers { get; set; } = new();
     }
 }

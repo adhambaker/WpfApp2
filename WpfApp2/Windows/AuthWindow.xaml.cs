@@ -13,7 +13,6 @@ namespace WpfApp2
         {
             InitializeComponent();
             EnsureTeacherUser();
-
         }
 
         private void EnsureTeacherUser()

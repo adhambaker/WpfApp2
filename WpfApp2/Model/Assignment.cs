@@ -1,4 +1,5 @@
-﻿using WpfApp2.Model;
+﻿using System.ComponentModel.DataAnnotations;
+using WpfApp2.Model;
 
 namespace WpfApp2.Model
 {
@@ -9,8 +10,6 @@ namespace WpfApp2.Model
         public string AssignmentDesc { get; set; } = "";
         public string AssignmentStatus { get; set; } = "";
         public int StudentId { get; set; }
-        public Student? Student { get; set; }
-
-
+        public Student? Student { get; set; }//navigation property
     }
 }
